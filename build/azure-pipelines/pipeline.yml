@@ -23,7 +23,7 @@ parameters:
       - latest
       - next
   - name: publishPythonApi
-    displayName: 🚀 Publish python-extension
+    displayName: 🚀 Publish pythonExtensionApi
     type: boolean
     default: false
 
@@ -31,7 +31,7 @@ extends:
   template: azure-pipelines/npm-package/pipeline.yml@templates
   parameters:
     npmPackages:
-      - name: python-extension
+      - name: pythonExtensionApi
         testPlatforms:
           - name: Linux
             nodeVersions:
@@ -45,12 +45,12 @@ extends:
         testSteps:
           - template: /build/azure-pipelines/templates/test-steps.yml@self
             parameters:
-              package: python-extension
+              package: pythonExtensionApi
         buildSteps:
           - template: /build/azure-pipelines/templates/pack-steps.yml@self
             parameters:
-              package: python-extension
-        ghTagPrefix: release/python-extension/
+              package: pythonExtensionApi
+        ghTagPrefix: release/pythonExtensionApi/
         tag: ${{ parameters.quality }}
         publishPackage: ${{ parameters.publishPythonApi }}
-        workingDirectory: $(Build.SourcesDirectory)/python-extension
+        workingDirectory: $(Build.SourcesDirectory)/pythonExtensionApi

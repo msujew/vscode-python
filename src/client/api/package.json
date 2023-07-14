@@ -1,5 +1,5 @@
 {
-    "name": "@vscode/python-extension",
+    "name": "@vscode/pythonExtensionApi",
     "description": "VSCode Python extension's public API",
     "version": "1.0.0",
     "publisher": "ms-python",

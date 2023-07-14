@@ -39,6 +39,6 @@
         "build",
         "out",
         "tmp",
-        "python-extension"
+        "pythonExtensionApi"
     ]
 }
