@@ -10,8 +10,8 @@
 		"VSCode",
 		"API"
 	],
-	"main": "./out/api/main.js",
-	"types": "./out/api/main.d.ts",
+	"main": "./out/main.js",
+	"types": "./out/main.d.ts",
 	"engines": {
 		"node": ">=16.17.1",
 		"vscode": "^1.78.0"
